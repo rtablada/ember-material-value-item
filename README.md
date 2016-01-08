@@ -11,13 +11,13 @@ ember install ember-material-lite ember-material-value-item
 
 ## Usage
 
-This example shows making a pseudo-select using `mdl-menu-item` and `mdl-menu`:
+This example shows making a pseudo-select using `mdl-menu-item`, with the `mut` helper to enforce two way binding.
 
 ```hbs
-<label>Favorite Book: <strong>{{model.book}}</strong></label>
+<label>Favorite Book: <strong>{{if model.book model.book 'Choose a Book'}}</strong></label>
 {{#mdl-menu}}
-  {{#mdl-value-item action=(mut model.book) value='The Hobbit'}}The Hobbit{{/mdl-value-item}}
-  {{#mdl-value-item action=(mut model.book) value='The Martian'}}The Martian{{/mdl-value-item}}
-  {{#mdl-value-item action=(mut model.book) value='The Catcher in the Rye'}}The Catcher in the Rye{{/mdl-value-item}}
+  {{#mdl-value-item binding=(mut model.book) value='The Hobbit'}}The Hobbit{{/mdl-value-item}}
+  {{#mdl-value-item binding=(mut model.book) value='The Martian'}}The Martian{{/mdl-value-item}}
+  {{#mdl-value-item binding=(mut model.book) value='The Catcher in the Rye'}}The Catcher in the Rye{{/mdl-value-item}}
 {{/mdl-menu}}
 ```

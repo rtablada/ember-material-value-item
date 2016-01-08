@@ -5,5 +5,7 @@ export default MenuItem.extend({
     let value = this.get('value') || this;
 
     this.sendAction('action', value);
+
+    this.set('binding', value);
   },
 });
