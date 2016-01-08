@@ -16,8 +16,8 @@ This example shows making a pseudo-select using `mdl-menu-item` and `mdl-menu`:
 ```hbs
 <label>Favorite Book: <strong>{{model.book}}</strong></label>
 {{#mdl-menu}}
-  {{#mdl-value-item action=(mut model.book) value='The Hobbit'}}The Hobbit{{/mdl-menu-item}}
-  {{#mdl-value-item action=(mut model.book) value='The Martian'}}The Martian{{/mdl-menu-item}}
-  {{#mdl-value-item action=(mut model.book) value='The Catcher in the Rye'}}The Catcher in the Rye{{/mdl-menu-item}}
+  {{#mdl-value-item action=(mut model.book) value='The Hobbit'}}The Hobbit{{/mdl-value-item}}
+  {{#mdl-value-item action=(mut model.book) value='The Martian'}}The Martian{{/mdl-value-item}}
+  {{#mdl-value-item action=(mut model.book) value='The Catcher in the Rye'}}The Catcher in the Rye{{/mdl-value-item}}
 {{/mdl-menu}}
 ```

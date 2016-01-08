@@ -1,4 +1,4 @@
-import MenuItem from 'ember-material-lite/components/menu-item';
+import MenuItem from 'ember-material-lite/components/mdl-menu-item';
 
 export default MenuItem.extend({
   click() {
